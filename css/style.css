@@ -1,15 +1,13 @@
 body {
-    background: #FFFFFF;
+    background: var(--color-white);
     color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    /* margin-top: 50px; */
     position: relative;
     width: 100%;
     margin: 0 auto;
-    /* max-width: 1920px; */
 }
 
 .about, .resume, .awards, .service, .personal, .lastest {
@@ -57,18 +55,17 @@ body {
     align-items: center;
     padding: 0px;
     gap: 12px;
-
     margin: 0 auto;
     width: 100%;
     margin: 0 auto;
     max-width: 151px;
     height: 48px;
-
     flex: none;
     order: 0;
     flex-grow: 0;
 
 }
+
 .navbar__logo img {
     width: 100%;
     margin: 0 auto;
@@ -78,23 +75,22 @@ body {
     order: 0;
     flex-grow: 0;
 }
+
 .logo-text {
     width: 100%;
     margin: 0 auto;
     max-width: 91px;
     height: 32px;
-    font-family: var(--font-main);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
+    font: var(--main-h4);
     line-height: 32px;
     text-align: center;
-    color: #121314;
+    color: var(--color-gray900);
     flex: none;
     order: 1;
     flex-grow: 0;
 
 }
+
 .navbar-items {
     width: auto;
     display: flex;
@@ -106,6 +102,7 @@ body {
     width: auto;
     flex: none;
 }
+
 .navbar-items > a{
     width: 100%;
     font: var(--main-body-large-400);
@@ -116,6 +113,7 @@ body {
         color: var(--color-gray900);
     } 
 }
+
 .navbar-items a.is-active {
     width: 100%;
     font: var(--main-body-large-400);
@@ -131,12 +129,10 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0px 24px;
-
     width: 100%;
     margin: 0 auto;
     max-width: 219px;
     height: 56px;
-
     background: linear-gradient(90deg, rgba(146, 73, 242, 0.12) 0%, rgba(255, 95, 73, 0.12) 100%);
     border: 1px solid transparent;
     border-radius: 4px;
@@ -145,13 +141,11 @@ body {
         linear-gradient(#fff, #fff) padding-box,
         linear-gradient(90deg, rgba(146, 73, 242, 0.5) 0%, rgba(255, 95, 73, 0.5) 100%) border-box;
     background-origin: border-box;
-
     font: var(--main-body-large-500);
     line-height: 56px;
     text-align: center;
     white-space: nowrap;
     color: var(--color-gray900);
-
     flex: none;
     order: 6;
     flex-grow: 0;
@@ -161,6 +155,7 @@ body {
     color: var(--color-gray900);
 }
 
+/* ============ (Frame552) ============ */
 .frame552{
     width: 100%;
     display: flex;
@@ -331,6 +326,7 @@ body {
     text-align: start;
     color: var(--color-gray600);
 }
+
 .company-logo-logo {
     width: 100%;
     max-width: 648px;
@@ -354,11 +350,12 @@ body {
 .company-logo-logo img:nth-child(3n) {
     border-right: none;
 }
+
 .company-logo-logo img:nth-child(n+4) {
     border-bottom: none;
 }
 
-/* ============ (frame551) ============ */
+/* ============ (Frame551) ============ */
 .frame551 {
     width: 100%;
     display: flex;
@@ -654,6 +651,7 @@ body {
 .education h2{
     color: var(--color-main500);
 }
+
 .work-history h2{
     color: var(--color-ceo500);
 }
@@ -990,6 +988,7 @@ body {
     position: relative;
     isolation: isolate;
 }
+
 .service::before {
     content: "";
     position: absolute;
@@ -1574,6 +1573,7 @@ body {
     position: relative;
     isolation: isolate;
 }
+
 .footer-CTA::before {
     content: "";
     position: absolute;
@@ -1642,6 +1642,7 @@ body {
     width: 100%;
     line-height: 20px;
 }
+
 .footer-CTA-frame494 p,
 .footer-CTA-frame495 p,
 .footer-CTA-frame496 p {
