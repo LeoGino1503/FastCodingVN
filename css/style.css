@@ -7,18 +7,25 @@ body {
     padding: 0px;
     position: relative;
     width: 100%;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
-.about, .resume, .awards, .service, .personal, .lastest {
-    padding-inline: var(--pad-x);
+.main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-inline: clamp(16px, calc((100vw - 1320px) / 2), 300px);
 }
 
 .devider {
+    display: flex;
     width: 100%;
     height: 1px;
     background: var(--color-gray100);
     max-width: 1320px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ============ (frame554) ============ */
@@ -30,7 +37,9 @@ body {
     align-items: center;
     justify-content: center;
     align-items: center;
-    padding: 88px 0px 72px 0px;
+    padding-block: 88px;
+    padding-inline: 0px;
+    padding-bottom: 72px;
 }
 
 /* ============ (Header) ============ */
@@ -39,7 +48,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 32px 300px;
+    padding-block: 32px;
+    padding-inline: clamp(16px, calc((100vw - 1320px) / 2), 300px);
     width: 100%;
     flex: none;
     order: 0;
@@ -163,7 +173,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 136px;
-    padding: 0px 300px;
+    padding-block: 0px;
 }
 
 .frame552 > img {
@@ -270,8 +280,7 @@ body {
     align-items: center;
     justify-content: space-between;
     align-items: center;
-    padding: 164px 300px;
-    /* list-style: none; */
+    padding-block: 164px;
 }
 
 .company-logo-content {
@@ -342,7 +351,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 88px;
-    padding: 164px 300px;
+    padding-block: 164px;
 }
 
 .frame551-content {
@@ -462,7 +471,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 48px;
-    padding: 0 300px 164px 300px;
+    padding-block: 0px;
     position: relative;
     isolation: isolate;
 }
@@ -477,6 +486,8 @@ body {
     background: url("../assets/img/bg-about.png") center / cover no-repeat;
     opacity: 1;
     z-index: -1;
+    left: calc(clamp(16px, (100vw - 1320px) / 2, 300px) * -1);
+    right: calc(clamp(16px, (100vw - 1320px) / 2, 300px) * -1);
 }
 
 .about-me::after {
@@ -493,6 +504,8 @@ body {
     );
     z-index: -1;
     pointer-events: none;
+    left: calc(clamp(16px, (100vw - 1320px) / 2, 300px) * -1);
+    right: calc(clamp(16px, (100vw - 1320px) / 2, 300px) * -1);
 }
 
 .about {
@@ -514,8 +527,6 @@ body {
 }
 
 .about > img {
-    width: 10vw;
-    height: 10vw;
     flex: none;
     object-fit: cover;
     border-radius: 50%;
@@ -593,6 +604,8 @@ body {
     gap: 24px;
     background: none;
     color: var(--color-gray900);
+    padding-inline: 0px;
+    padding-block: 0px 164px;
 }
 
 .resume h3 {
@@ -622,7 +635,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 36px;
-    min-width: 424px;
 }
 
 /* ============ (About Resume Education & Work History) ============ */
@@ -704,9 +716,10 @@ body {
 
 .tools {
     display: grid;
-    width: 424px;
+    width: 100%;
+    max-width: 424px;
     height: 412px;
-    grid-template-columns: repeat(3, 128px);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(3, 124px);
     gap: 20px;
 }
@@ -745,7 +758,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 136px;
-    padding: 164px 300px;
+    padding-block: 164px;
 }
 
 .contact-info {
@@ -962,7 +975,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 72px;
-    padding: 164px 300px;
+    padding-block: 164px;
     position: relative;
     isolation: isolate;
 }
@@ -974,6 +987,8 @@ body {
     background: url("../assets/img/bg-service.png") center / cover no-repeat;
     opacity: 0.12;
     z-index: -1;
+    left: calc(clamp(16px, (100vw - 1320px) / 2, 300px) * -1);
+    right: calc(clamp(16px, (100vw - 1320px) / 2, 300px) * -1);
 }
 
 .service-heading {
@@ -1124,7 +1139,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 72px;
-    padding: 164px 300px;
+    padding-block: 164px;
 }
 
 .awards-card {
@@ -1306,13 +1321,15 @@ body {
 
 /* ============ (Projects) ============ */
 .projects {
-    width: 100%;
+    width: calc(100% + 2 * clamp(16px, (100vw - 1320px) / 2, 300px));
+    margin-inline: calc(clamp(16px, (100vw - 1320px) / 2, 300px) * -1);
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
     gap: 72px;
-    padding: 164px 0px;
+    padding-block: 164px;
+    padding-inline: 0px;
 }
 
 .projects h2 {
@@ -1324,22 +1341,16 @@ body {
 }
 
 .projects-card {
-    --projects-side: 0.82;
-    --projects-center: 1.86;
-    --projects-total: calc(var(--projects-side) * 2 + var(--projects-center));
     position: relative;
-    align-self: flex-start;
-    width: calc(100% / 0.7);
+    align-self: stretch;
+    width: 100%;
     height: 490px;
     min-height: 490px;
     display: grid;
-    grid-template-columns: 1fr 873px 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 873px) minmax(0, 1fr);
     overflow: hidden;
     background: var(--color-white);
     gap: 24px;
-    left: 50%;
-    width: 100vw;
-    margin-left: -50vw;
 }
 
 .projects-card-item {
@@ -1547,7 +1558,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 64px;
-    padding: 164px 300px;
+    padding-block: 164px;
     position: relative;
     isolation: isolate;
 }
@@ -1674,7 +1685,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    padding: 32px 300px;
+    padding-block: 32px;
 }
 
 .footer-copyright h2 {
