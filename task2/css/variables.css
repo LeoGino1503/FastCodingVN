@@ -290,6 +290,7 @@
     --uiux-body-xl-500: 500 20px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-xl-600: 600 20px/1.2 var(--font-uiux); color: var(--color-gray-900);
     
+    --uiux-body-large-300: 300 18px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-large-400: 400 18px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-large-500: 500 18px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-large-600: 600 18px/1.2 var(--font-uiux); color: var(--color-gray-900);
