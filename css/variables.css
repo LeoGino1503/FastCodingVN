@@ -125,8 +125,7 @@
     --color-photo900: #09240F;
 
     /* ---- TYPOGRAPHY ---- */
-
-    --font-main: "Inter";
+    --font-main: "Inter", sans-serif;
     --font-product-design: "Work Sans";
     --font-ceo: "Satoshi";
     --font-resume: "Fira Sans";
