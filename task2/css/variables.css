@@ -295,10 +295,12 @@
     --uiux-body-large-500: 500 18px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-large-600: 600 18px/1.2 var(--font-uiux); color: var(--color-gray-900);
     
+    --uiux-body-regular-300: 300 16px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-regular-400: 400 16px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-regular-500: 500 16px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-regular-600: 600 16px/1.2 var(--font-uiux); color: var(--color-gray-900);
     
+    --uiux-body-small-300: 300 14px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-small-400: 400 14px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-small-500: 500 14px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-small-600: 600 14px/1.2 var(--font-uiux); color: var(--color-gray-900);
@@ -307,5 +309,4 @@
     --uiux-body-xs-400: 400 12px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-xs-500: 500 12px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-xs-600: 600 12px/1.2 var(--font-uiux); color: var(--color-gray-900);
-    
 }
