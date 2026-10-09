@@ -281,6 +281,7 @@
     --uiux-cap5: 600 12px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-cap6: 600 10px/1.2 var(--font-uiux); color: var(--color-gray-900);
     
+    --uiux-body-xxl-300: 300 24px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-xxl-400: 400 24px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-xxl-500: 500 24px/1.2 var(--font-uiux); color: var(--color-gray-900);
     --uiux-body-xxl-600: 600 24px/1.2 var(--font-uiux); color: var(--color-gray-900);

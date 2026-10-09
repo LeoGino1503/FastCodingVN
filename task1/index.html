@@ -65,14 +65,14 @@
             <div class="frame552-heading">
               <div class="frame43">
                 <div class="frame43-devider"></div>
-                <p>Visual Designer<br>Webflow Developer</p>
+                <p>Visual Designer <br>Webflow Developer</p>
               </div>
-              <h2>Hello, I’m<br>Howard Stark.</h2>
+              <h2>Hello, I’m <br>Howard Stark.</h2>
             </div>
             <p>Hello, I'm a passionate Visual Designer, Webflow Developer and part time freelancer with a keen eye for details.</p>
             <div class="frame552-actions">
               <a href="#contact" class="frame552-btn frame552-btn--primary">Say Hello</a>
-              <a href="#portfolio" class="frame552-btn frame552-btn--light">
+              <a href="#portfolio" class="frame552-btn frame552-btn--light" target="_blank" rel="noopener noreferrer">
                 View Portfolio
                 <img src="assets/icons/arrow-topright.svg" alt="">
               </a>
@@ -106,6 +106,10 @@
           <li>
             <img src="assets/icons/zoom.svg" alt="Zoom">
           </li>
+          <span class="company-logo-logo__vline1" style="grid-column:2;grid-row:1/-1" aria-hidden="true"></span>
+          <span class="company-logo-logo__vline2" style="grid-column:4;grid-row:1/-1" aria-hidden="true"></span>
+          <span class="company-logo-logo__hline company-logo-logo__hline--1" aria-hidden="true"></span>
+          <span class="company-logo-logo__hline company-logo-logo__hline--2" aria-hidden="true"></span>
         </ul>
       </section>
 
@@ -150,14 +154,14 @@
             <p>I specialize in UI/UX &amp; Graphic Design and my passion is all about building elegant and professional user interfaces and websites. I also do branding nd identity design such as logo design, and business cards, along with photo editing.</p>
           </div>
           <div class="about-button">
-            <a href="#contact" class="about-button-primary">
-              Request Quotation
+            <button class="about-button-primary">
+              <span>Request Quotation</span>
               <img src="assets/icons/icon-arrowright.svg" alt="">
-            </a>
-            <a href="#contact" class="about-button-secondary">
+            </button>
+            <button class="about-button-secondary">
               <img src="assets/icons/icon-download.svg" alt="">
-              Download Resume
-            </a>
+              <span>Download Resume</span>
+            </button>
           </div>
         </div>
         <!-- ============ Resume ============ -->
@@ -241,35 +245,35 @@
             <h3>Tools i USE</h3>
             <ul class="tools">
               <li class="tool">
-                <img src="assets/icons/slack-vertical.svg" alt="Slack Logo">
+                <img src="assets/icons/slack-vertical.png" alt="Slack Logo">
                 <p>Slack</p>
               </li>
               <li class="tool">
-                <img src="assets/icons/figma-vertical.svg" alt="Figma Logo">
+                <img src="assets/icons/figma-vertical.png" alt="Figma Logo">
                 <p>Figma</p>
               </li>
               <li class="tool">
-                <img src="assets/icons/sketch-vertical.svg" alt="Sketch Logo">
+                <img src="assets/icons/sketch-vertical.png" alt="Sketch Logo">
                 <p>Sketch</p>
               </li>
               <li class="tool">
-                <img src="assets/icons/photoshop-vertical.svg" alt="Photoshop Logo">
+                <img src="assets/icons/photoshop-vertical.png" alt="Photoshop Logo">
                 <p>Photoshop</p>
               </li>
               <li class="tool">
-                <img src="assets/icons/illustrator-vertical.svg" alt="Illustrator Logo">
+                <img src="assets/icons/illustrator-vertical.png" alt="Illustrator Logo">
                 <p>Illustrator</p>
               </li>
               <li class="tool">
-                <img src="assets/icons/adobexd-vertical.svg" alt="Adobe XD Logo">
+                <img src="assets/icons/adobexd-vertical.png" alt="Adobe XD Logo">
                 <p>Adobe XD</p>
               </li>
               <li class="tool">
-                <img src="assets/icons/notion-vertical.svg" alt="Notion Logo">
+                <img src="assets/icons/notion-vertical.png" alt="Notion Logo">
                 <p>Notion</p>
               </li>
               <li class="tool">
-                <img src="assets/icons/webflow-vertical.svg" alt="Webflow Logo">
+                <img src="assets/icons/webflow-vertical.png" alt="Webflow Logo">
                 <p>Webflow</p>
               </li>
             </ul>
@@ -283,7 +287,10 @@
         <div class="contact-info">
           <div class="cta">
             <div class="cta-heading">
-              <h2>💼 LET'S WORK TOGETHER!</h2>
+              <div class="cta-heading-icon">
+                <img src="assets/icons/briefcase-icon.svg" alt="Smile Face">
+                <h2>LET'S WORK TOGETHER!</h2>
+              </div>
               <p>I am taking on new projects. Waiting to hear about new <br>projects, so if you'd like to chat please get in touch.</p>
             </div>
             <div class="cta-email">
@@ -409,7 +416,7 @@
               <img src="assets/icons/award-icon1.png" alt="">
             </div>
             <div class="awards-card-item-content">
-              <h3>W. Awwwards Judge ‘19-20</h3>
+              <h3>Awwwards Judge ‘19-20</h3>
               <p>Awwwards is a professional web design and development competition body. It aims to recognize and promote.</p>
             </div>
           </div>
@@ -479,16 +486,20 @@
           <div class="projects-card-item">
             <img class="projects-card-media" src="assets/img/project3.svg" alt="NFT marketplace preview">
           </div>
-          <button type="button" class="projects-card-button projects-card-button--prev" aria-label="Previous project">
-            <img src="assets/icons/whitecycle-left.svg" alt="">
-          </button>
-          <button type="button" class="projects-card-button projects-card-button--next" aria-label="Next project">
-            <img src="assets/icons/whitecycle-right.svg" alt="">
-          </button>
+          <div class="projects-card-button-container projects-card-button-container--prev">
+            <button type="button" class="projects-card-button" aria-label="Previous project">
+              <img src="assets/icons/CaretLeft.svg" alt="">
+            </button>
+          </div>
+          <div class="projects-card-button-container projects-card-button-container--next">
+            <button type="button" class="projects-card-button" aria-label="Next project">
+              <img src="assets/icons/CaretRight.svg" alt="">
+            </button>
+          </div>
         </div>
         <div class="projects-button">
           <a href="#projects" class="projects-button-primary">
-            View all projects
+            View All Projects
           </a>
         </div>
       </section>
@@ -503,14 +514,14 @@
             <img src="assets/icons/email-icon.svg" alt="">
             <div class="footer-CTA-frame494-content">
               <h3>Email Address</h3>
-              <p>howardstark@info.com</p>
+              <a href="mailto:howardstark@info.com">howardstark@info.com</a>
             </div>
           </div>
           <div class="footer-CTA-frame495">
             <img src="assets/icons/phone-icon.svg" alt="">
             <div class="footer-CTA-frame495-content">
               <h3>Phone Number</h3>
-              <p>(406) 555-0120</p>
+              <a href="tel:+4065550120">(406) 555-0120</a>
             </div>
           </div>
           <div class="footer-CTA-frame496">
